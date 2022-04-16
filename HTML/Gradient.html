@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes gradient {
+            0%{
+                background-image: url(../IMAGE/web_developer_person.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation-duration: 2s;
+            }
+            25%{
+                background-image: linear-gradient(red,orange);
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation-duration: 2s;
+            }
+            50%{
+                background-image: radial-gradient(yellow, orange);
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation-duration: 2s;
+            }
+            75%{
+                background-image: conic-gradient(red,blue);
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation-duration: 2s;
+            }
+            100%{
+                background-image: url(../IMAGE/web_developer_person.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation-duration: 2s;
+            }
+        }
+        div{
+            animation-name: gradient;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            width: 800px;
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Linear Gradient Simple Excersise</h1><br>
+    <center><div></div></center>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 600px;
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @keyframes cactus_plant{
+            0%{
+                transform: translate(0,0);
+            }
+            50%{
+                transform: translate(-500px,0);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        @keyframes ball_jump{
+           0%{
+                transform: translate(0,0);
+            }
+            50%{
+                transform: translate(0,-200px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+}
+        .cactus{
+            margin-top: 500px;
+            height: 100px;
+            width: 100px;
+            animation-name: cactus_plant;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .ball{
+            margin-top: 550px;
+            margin-left: 200px;
+            height: 50px;
+            width: 50px;
+            animation-name: ball_jump;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cactus Vs Basket Ball</h1>
+    <center>
+        <div>
+            <img class="ball" src="../IMAGE/basketball.png" alt="">
+            <img class="cactus" src="../IMAGE/cactus.webp" alt="">
+        </div>
+    </center>
+</body>
+</html>
