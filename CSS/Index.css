@@ -79,7 +79,7 @@ b{
     bottom: 0;
     width: 100%;
     background-color: black;
-    color: white;
+    color: gray;
     text-align: left;
  }
 @media screen and (max-width:800px) {
