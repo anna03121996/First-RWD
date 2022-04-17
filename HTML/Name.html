@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: black;
+        }
         @keyframes name {
             1%{
+                
                 animation-delay: 3s;
                 transform: translate(0,0);
             }
             90%{
-                transform: translate(0px,500px) rotate(360deg);
+                opacity: 100%;
+                transform: translate(0px,300px) rotate(360deg);
             }
             100%{
-                animation-delay: 6s;
+                animation-delay: 15s;
             }
         }
         .box{
@@ -26,11 +31,14 @@
             animation-iteration-count: infinite; */
         }
         .box>p{
+            color: orange;
+            text-shadow: 0 0 20 rgba(247, 154, 49, 0.842);
+            opacity: 0%;
             font-size: 20px;
             width: 30px;
             animation-name: name;
             /* transform: translate(0px,500px) rotate(360deg); */
-            animation-duration: 10s;
+            animation-duration: 18s;
             animation-iteration-count: 1;
         }
         .box>p:nth-child(1)
@@ -76,6 +84,7 @@
     </style>
 </head>
 <body>
+    <h1 style="color: aliceblue;">Name Transform</h1>
     <center>
         <div class="box">
             <p>A</p>
