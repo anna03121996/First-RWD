@@ -6,7 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        body{
+            background-color: black;
+        }
+        @keyframes animate {
+            1%{
+                transform: scale(.5)
+            }
+            50%{
+                transform: translateZ(-.5);
+            }
+            100%{
+                transform: translateZ(.5);
+            }
+        }
+        .circle{
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .circle1{
+            transform: rotate(360deg);
+            height: 400px;
+            width: 400px;
+            border: 20px solid red;
+            box-shadow: 0 0 50px red;
+            border-radius: 50%;
+        }
+        .circle2{
+            margin-top: 25px;
+            height: 300px;
+            width: 300px;
+            border: 20px solid green;
+            box-shadow: 0 0 50px green;
+            border-radius: 50%;
+        }
+        .circle3{
+            margin-top: 25px;
+            height: 200px;
+            width: 200px;
+            border: 20px solid blue;
+            box-shadow: 0 0 50px blue;
+            border-radius: 50%;
+        }
+        .circle4{
+            margin-top: 25px;
+            height: 100px;
+            width: 100px;
+            border: 20px solid orange;
+            box-shadow: 0 0 50px orange;
+            border-radius: 50%;
+        }
+        /* div{
             height: 600px;
             width: 300px;
             display: flex;
@@ -52,15 +104,26 @@
             animation-duration: 3s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
-        }
+        } */
     </style>
 </head>
 <body>
-    <h1>Cactus Vs Basket Ball</h1>
-    <center>
+    <h1 style="color: aliceblue;">Drop Wave</h1>
+    <!-- <center>
         <div>
             <img class="ball" src="../IMAGE/basketball.png" alt="">
             <img class="cactus" src="../IMAGE/cactus.webp" alt="">
+        </div>
+    </center> -->
+    <center>
+        <div class="box">
+            <div class="circle circle1">
+                <div class="circle circle2">
+                    <div class="circle circle3">
+                        <div class="circle circle4"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </center>
 </body>
