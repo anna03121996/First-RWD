@@ -42,7 +42,7 @@
             border: 2px solid gray;
             border-radius: 50%;
             animation: clock;
-            animation-duration: 60s;
+            animation-duration: 6s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
@@ -50,7 +50,7 @@
             height: 200px;
             width: 200px;
             animation: clock;
-            animation-duration: 3600s;
+            animation-duration: 20s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
@@ -58,7 +58,7 @@
             height: 100px;
             width: 100px;
             animation: clock;
-            animation-duration: 86400s;
+            animation-duration: 40s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
@@ -71,17 +71,17 @@
             left: 50%;
             border-radius: 50%;
             transform: translateX(-50%);
-            background-color: yellowgreen;
-            box-shadow: 0 0 30px yellowgreen;
+            background: var(--clr);
+            box-shadow: 0 0 30px var(--clr);
 
         }
     </style>
 </head>
 <body>
     <div class="loader">
-        <div class="circle"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
+        <div class="circle" style="--clr:red"></div>
+        <div class="circle circle2" style="--clr:yellow"></div>
+        <div class="circle circle3" style="--clr:green"></div>
     </div>
 </body>
 </html>
